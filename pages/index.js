@@ -1,13 +1,12 @@
 import Link from 'next/link'
+import Layout from '../components/Layout'
 
 const index = () => {
   return (
     <div>
-      <p>Hello Next.js</p>
-
-      <Link href='/about'>
-        <a>About</a>
-      </Link>
+      <Layout>
+        <p>Hello Next.js</p>
+      </Layout>
     </div>
   )
 }
