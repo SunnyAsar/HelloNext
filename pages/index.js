@@ -14,7 +14,7 @@ const index = (props) => {
   return (
     <div>
       <Layout>
-        <h1>My Blog</h1>
+        <h1>The Batman Show </h1>
         <ul>
           {props.shows.map((show) => (
             <li key={show.id}>
@@ -24,6 +24,23 @@ const index = (props) => {
             </li>
           ))}
         </ul>
+        <style jsx>{`
+          h1 {
+            font-family: cursive;
+            color: #b284be;
+            font-size: 40px;
+            text-align: center;
+          }
+          li {
+            list-style: none;
+          }
+          li a {
+            list-style: none;
+            text-decoration: none;
+            color: gray;
+            font-size: 24px;
+          }
+        `}</style>
       </Layout>
     </div>
   )
